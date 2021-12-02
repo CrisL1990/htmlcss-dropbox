@@ -1,0 +1,43 @@
+/*Inizio Common*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix{
+    display: table;
+    content: "";
+    clear: both;
+}
+/*Fine Common*/
+
+/*Inizio header*/
+header .row{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+}
+
+header .row .nav{
+    width: 30%;
+    height: 100%;
+    background-color: aqua;
+}
+
+header .row .nav-sx{
+    float: left;
+}
+
+header .row .nav-dx{
+    float: right;
+}
+/*Fine header*/
+
+/*Inizio Jumbotron*/
+
+.jumbotron{
+    width: 100%;
+    height: 800px;
+    background-color: red;
+}
