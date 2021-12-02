@@ -5,11 +5,12 @@
     padding: 0;
 }
 
-.clearfix{
+.float-content::after{
     display: table;
     content: "";
     clear: both;
 }
+
 /*Fine Common*/
 
 /*Inizio header*/
@@ -43,28 +44,128 @@ header .row .nav-dx{
 
 .jumbotron .content{
     width: 85%;
-    height: 100%;
+    height: 500px;
     margin: auto;
     background-color: seagreen;
 }
 
 .jumbotron .content .title{
     width: 100%;
-    height: 40%;
+    height: 300px;
     background-color: brown;
 }
 
 .jumbotron .content .left-box{
     width: 40%;
-    height: 60%;
+    height: 500px;
     float: left;
     background-color: chartreuse;
 }
 
 .jumbotron .content .right-box{
     width: 60%;
-    height: 60%;
+    height: 500px;
     float: right;
     background-color: fuchsia;
 }
 /*Fine Jumbotron*/
+
+/*Inizio main*/
+
+main .content{
+    width: 75%;
+    height: 1500px;
+    margin: auto;
+    background-color: black;
+}
+
+/*Inizio piani*/
+main .content .piano{
+    width: 100%;
+    height: 1700px;
+    background-color: cornflowerblue;
+}
+
+main .content .piano .piano-title{
+    width: 100%;
+    height: 250px;
+    background-color: darkorange;
+}
+
+main .content .piano .box{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 30%;
+    height: 800px;
+    background-color:darkorchid;
+    display: inline;
+}
+
+main .content .piano .left{
+    float: left;
+}
+
+main .content .piano .right{
+    float: right;
+}
+
+.center-box{
+    margin: 0 5%;
+}
+
+.enterprise{
+    height: 200px;
+    background-color: deeppink;
+    margin-bottom: 20px;
+}
+
+.partner{
+    width: 100%;
+    height: 350px;
+    background-color: deeppink;
+}
+
+.piano-img, .piano-par{
+    width: 50%;
+    height: 350px;
+    background-color: yellow;
+    border: solid black 1px;
+}
+/*Fine piani*/
+
+/*Inizio operazioni*/
+main .content .operazioni{
+    width: 100%;
+    height: 700px;
+    background-color: chocolate;
+}
+
+main .content .operazioni .op-title{
+    width: 100%;
+    height: 100px;
+    background-color: crimson;
+}
+
+main .content .operazioni .line{
+    height: 350px;
+    width: 100%;
+    background-color: darkgray;
+}
+
+.box-op{
+    display: inline;
+    width: calc(100% / 3);
+    height: 350px;
+    border: solid black 1px;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+/*Fine operazioni*/
+
+/*Fine main*/
