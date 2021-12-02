@@ -35,9 +35,36 @@ header .row .nav-dx{
 /*Fine header*/
 
 /*Inizio Jumbotron*/
-
 .jumbotron{
     width: 100%;
     height: 800px;
     background-color: red;
 }
+
+.jumbotron .content{
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    background-color: seagreen;
+}
+
+.jumbotron .content .title{
+    width: 100%;
+    height: 40%;
+    background-color: brown;
+}
+
+.jumbotron .content .left-box{
+    width: 40%;
+    height: 60%;
+    float: left;
+    background-color: chartreuse;
+}
+
+.jumbotron .content .right-box{
+    width: 60%;
+    height: 60%;
+    float: right;
+    background-color: fuchsia;
+}
+/*Fine Jumbotron*/
