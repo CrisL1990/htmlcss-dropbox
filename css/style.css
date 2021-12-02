@@ -18,6 +18,8 @@ header .row{
     width: 100%;
     height: 80px;
     background-color: blue;
+    position: fixed;
+    top: 0;
 }
 
 header .row .nav{
@@ -37,6 +39,7 @@ header .row .nav-dx{
 
 /*Inizio Jumbotron*/
 .jumbotron{
+    margin-top: 80px ;
     width: 100%;
     height: 800px;
     background-color: red;
@@ -50,6 +53,7 @@ header .row .nav-dx{
 }
 
 .jumbotron .content .title{
+    
     width: 100%;
     height: 300px;
     background-color: brown;
@@ -74,7 +78,6 @@ header .row .nav-dx{
 
 main .content{
     width: 75%;
-    height: 1500px;
     margin: auto;
     background-color: black;
 }
@@ -82,7 +85,6 @@ main .content{
 /*Inizio piani*/
 main .content .piano{
     width: 100%;
-    height: 1700px;
     background-color: cornflowerblue;
 }
 
@@ -121,7 +123,6 @@ main .content .piano .right{
 
 .partner{
     width: 100%;
-    height: 350px;
     background-color: deeppink;
 }
 
@@ -178,7 +179,28 @@ main .content .operazioni .line{
 
 .sponsor-img{
     width: 100vw;
-    height: 500px;
     background-color: darksalmon;
+}
+
+.sponsor-par{
+    display: inline;
+    height: 500px;
+    width: 40%;
+    border: solid black 1px;
+}
+
+.sponsor-left, .sponsor-right{
+    display: inline;
+    height: 500px;
+    width: 30%;
+    border: solid black 1px;
+}
+
+#img-1, #img-2, #img-3, #img-4, #img-5, #img-6, #img-7, #img-8{
+    display: inline;
+    height: 50%;
+    width: 50%;
+    float: left;
+    border: solid black 1px;
 }
 /*Fine main*/
