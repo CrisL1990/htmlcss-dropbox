@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .float-content::after{
@@ -11,21 +12,26 @@
     clear: both;
 }
 
+.button{
+    padding: 8px 20px;
+    background-color: rgb(0, 97, 255);
+}
 /*Fine Common*/
 
 /*Inizio header*/
 header .row{
+    background-color: white;
     width: 100%;
     height: 80px;
-    background-color: blue;
     position: fixed;
     top: 0;
+    text-align: center;
+    line-height: 80px;
 }
 
 header .row .nav{
-    width: 30%;
+    width: 40%;
     height: 100%;
-    background-color: aqua;
 }
 
 header .row .nav-sx{
@@ -34,6 +40,31 @@ header .row .nav-sx{
 
 header .row .nav-dx{
     float: right;
+}
+
+header .row .nav ul{
+    list-style: none;
+    margin-left: 15px;
+}
+
+header .row .nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    height: 80px;
+}
+
+header .row .nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#logo{
+   vertical-align: middle;
+   margin-bottom: 10px;
+}
+
+#text-btn{
+    color: white;
 }
 /*Fine header*/
 
@@ -137,7 +168,6 @@ main .content .piano .right{
 /*Inizio operazioni*/
 main .content .operazioni{
     width: 100%;
-    height: 850px;
     background-color: chocolate;
 }
 
@@ -184,15 +214,15 @@ main .content .operazioni .line{
 
 .sponsor-par{
     display: inline;
-    height: 500px;
-    width: 40%;
+    height: 30vw;
+    width: calc(100% - 60vw);
     border: solid black 1px;
 }
 
 .sponsor-left, .sponsor-right{
     display: inline;
-    height: 500px;
-    width: 30%;
+    height: 30vw;
+    width: 30vw;
     border: solid black 1px;
 }
 
