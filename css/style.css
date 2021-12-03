@@ -180,6 +180,7 @@ main .content .piano .piano-title{
 /*Fine titolo piani abbonamenti*/
 
 
+/*Inizio colonne piani*/
 main .content .piano .box{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -284,11 +285,6 @@ main .content .piano .right{
     margin: 0 5%;
 }
 
-.enterprise{
-    height: 200px;
-    background-color: deeppink;
-    margin-bottom: 20px;
-}
 
 .partner{
     width: 100%;
@@ -301,6 +297,53 @@ main .content .piano .right{
     background-color: yellow;
     border: solid black 1px;
 }
+/*Fine colonne piani*/
+
+/*Inizio enterprise*/
+.enterprise{
+    border: solid lightgray 1px;
+    width: 75%;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.header-enterprise{
+    position: relative;
+    width: 100%;
+}
+
+.enterprise .button{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+}
+
+#ufficio-btn{
+    color: white;
+    text-decoration: none;
+    padding: 10px 80px;
+}
+
+.enterprise h3{
+    margin-left: 30px;
+    padding-top: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.enterprise #ufficio{
+    margin-left: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.enterprise p{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+/*Fine enterprise*/
 /*Fine piani*/
 
 /*Inizio operazioni*/
