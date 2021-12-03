@@ -145,6 +145,7 @@ main .content .piano{
     width: 100%;
 }
 
+/*Inizio titolo piani abbonamenti*/
 .piano-title .title{
     padding-top: 170px;
     font-size: 40px;
@@ -176,16 +177,101 @@ main .content .piano .piano-title{
 #round-blue{
     border: solid rgb(0, 97, 255) 5px;
 }
+/*Fine titolo piani abbonamenti*/
+
 
 main .content .piano .box{
     margin-top: 30px;
     margin-bottom: 30px;
     width: 30%;
-    height: 800px;
-    background-color:darkorchid;
+    border: solid lightgray 1px;
     display: inline;
 }
 
+.left-box{
+    padding-bottom: 350px;
+}
+
+.right-box, .center-box{
+    padding-bottom: 300px;
+}
+.header-box{
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: solid lightgray 1px;
+    text-align: center;
+}
+
+.header-box .far{
+    margin-right: 10px;
+}
+
+.box-body{
+    padding-left: 30px;
+}
+
+.box-body h3{
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.box-body h4{
+    margin-bottom: 10px;
+}
+
+.pros{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#user{
+    margin-top: 50px;
+}
+
+.prova-container{
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#try{
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.acquista-ora{
+    padding-left: 30px;
+}
+
+.linea{
+    margin: 50px 0;
+    margin-left: 30px;
+    width: 80px;
+    border-bottom: solid lightgray 1px;
+}
+
+.punti-salienti{
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.lista-punti-salienti{
+    padding-left: 30px;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.lista-punti-salienti li{
+    line-height: 50px;
+    
+}
+
+.fas.fa-check{
+    color: rgb(0, 92, 242);
+    margin-right: 10px;
+}
 main .content .piano .left{
     float: left;
 }
