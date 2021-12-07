@@ -1,9 +1,72 @@
-/*Inizio Common*/
+
+/*Inizio Common*//*
+html{
+    scroll-behavior: smooth;
+}*/
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    
+}
+
+/*Inizio setting bottoni*/
+.btn-blu{
+    background-color: rgb(0, 97, 255);
+}
+
+.btn-gray{
+    background-color: rgb(245, 245, 245);
+    color: black;
+}
+
+.button:hover{
+    background-color: rgba(0, 97, 255, 0.5);
+}
+
+.btn-big:hover{
+    background-color: rgba(0, 97, 255, 0.5);
+}
+
+.button{
+    padding: 8px 20px;
+}
+
+.btn-big{
+    padding: 8px 50px;
+}
+
+#text-white, #prova-gratuita, #ufficio-btn, #try{
+    color: white;
+    text-decoration: none;
+}
+/*Fine setting bottoni*/
+
+/*Inizio setting width frequenti*/
+.width100{
+    width: 100%;
+}
+
+.width90{
+    width: 90%;
+    margin: auto;
+}
+
+.width75{
+    width: 75%;
+    margin: auto;
+}
+/*Fine setting width frequenti*/
+
+/*Inizio setting flottaggi */
+.left-float{
+    float: left;
+}
+
+.right-float{
+    float: right;
 }
 
 .float-content::after{
@@ -11,17 +74,13 @@
     content: "";
     clear: both;
 }
-
-.button{
-    padding: 8px 20px;
-    background-color: rgb(0, 97, 255);
-}
+/*Fine setting flottaggi */
 /*Fine Common*/
 
 /*Inizio header*/
 header .row{
+    z-index: 999;
     background-color: white;
-    width: 100%;
     height: 80px;
     position: fixed;
     top: 0;
@@ -31,15 +90,7 @@ header .row{
 
 header .row .nav{
     width: 40%;
-    height: 100%;
-}
-
-header .row .nav-sx{
-    float: left;
-}
-
-header .row .nav-dx{
-    float: right;
+    height: 80px;
 }
 
 header .row .nav ul{
@@ -54,24 +105,33 @@ header .row .nav ul li{
 }
 
 header .row .nav ul li a{
+    display: inline-block;
     text-decoration: none;
     color: black;
+}
+
+.nav-dx .header-btn .btn-blu{
+    display: inline;
+    padding: 8px 20px;
+}
+
+.nav-dx .header-btn .btn-blu:hover{
+    background-color: rgba(0, 97, 255, 0.5);
+}
+
+header .row .nav ul li .border-blu:hover{
+    border-bottom: solid rgb(0, 97, 255) 5px;
 }
 
 #logo{
    vertical-align: middle;
    margin-bottom: 10px;
 }
-
-#text-btn{
-    color: white;
-}
 /*Fine header*/
 
 /*Inizio Jumbotron*/
 .jumbotron{
     margin-top: 80px ;
-    width: 100%;
     height: 800px;
     background-color: rgb(180, 208, 231);
 }
@@ -85,22 +145,17 @@ header .row .nav ul li a{
 .jumbotron .content .title{
     padding-top: 100px;
     font-size: 80px;
-    width: 100%;
-    height: 300px;
-    
+    height: 300px; 
 }
 
 .jumbotron .content .left-box{
     padding-top: 50px;
     width: 35%;
-    float: left;
 }
 
 .jumbotron .content .right-box{
     padding-top: 50px;
     width: 60%;
-    float: right;
-    
 }
 
 #par-jumbo{
@@ -111,21 +166,13 @@ header .row .nav ul li a{
 .jumbotron .content a{
     margin-bottom: 15px;
     display: inline-block;
-    color: white;
     text-decoration: none;
 }
 
-#prova-gratuita{
-    color: white;
-}
 .down-arrow{
     margin-top: 50px;
     font-size: 60px;
     color: black;
-}
-
-#jumbo-img{
-    width: 100%;
 }
 /*Fine Jumbotron*/
 
@@ -135,24 +182,11 @@ main{
     margin-top: 50px;
 }
 
-main .content{
-    width: 75%;
-    margin: auto;
-}
-
 /*Inizio piani*/
-main .content .piano{
-    width: 100%;
-}
-
 /*Inizio titolo piani abbonamenti*/
 .piano-title .title{
     padding-top: 170px;
     font-size: 40px;
-}
-
-main .content .piano .piano-title{
-    width: 100%; 
 }
 
 .fatturazione{
@@ -198,7 +232,6 @@ main .content .piano .box{
 }
 .header-box{
     padding: 10px 0;
-    width: 100%;
     border-bottom: solid lightgray 1px;
     text-align: center;
 }
@@ -235,13 +268,6 @@ main .content .piano .box{
     margin-bottom: 40px;
 }
 
-#try{
-    color: white;
-    text-decoration: none;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
 .acquista-ora{
     padding-left: 30px;
 }
@@ -266,30 +292,15 @@ main .content .piano .box{
 
 .lista-punti-salienti li{
     line-height: 50px;
-    
 }
 
 .fas.fa-check{
     color: rgb(0, 92, 242);
     margin-right: 10px;
 }
-main .content .piano .left{
-    float: left;
-}
-
-main .content .piano .right{
-    float: right;
-}
 
 .center-box{
     margin: 0 5%;
-}
-
-
-.partner{
-    width: 75%;
-    margin: auto;
-    
 }
 
 .piano-img, .piano-par{
@@ -301,29 +312,18 @@ main .content .piano .right{
 
 /*Inizio enterprise*/
 .enterprise{
-    z-index: -1;
     border: solid lightgray 1px;
-    width: 75%;
-    margin: auto;
     position: relative;
     margin-bottom: 20px;
 }
 
-
-.header-enterprise{
-    position: relative;
-    width: 100%;
-}
-
-.enterprise .button{
+.enterprise .btn-big{
     position: absolute;
     top: 80px;
     right: 50px;
 }
 
 #ufficio-btn{
-    color: white;
-    text-decoration: none;
     padding: 10px 80px;
 }
 
@@ -341,17 +341,12 @@ main .content .piano .right{
 }
 
 .enterprise p{
-
     margin-left: 30px;
     margin-bottom: 30px;
 }
 /*Fine enterprise*/
 
 /*Inizio partner*/
-#partner-img{
-    width: 100%;
-}
-
 .partner .piano-par{
     padding-left: 50px;
     padding-right: 0px;
@@ -384,23 +379,13 @@ main .content .piano .right{
 /*Fine piani*/
 
 /*Inizio operazioni*/
-main .content .operazioni{
-    width: 100%;
-    
-}
-
 .op-title{
-    width: 75%;
-    margin: auto;
     margin-top: 100px;
     margin-bottom: 50px;
     font-size: 30px;
 }
 .line{
-    width: 75%;
-    margin: auto;
-    margin-bottom: 100px;
-    
+    margin-bottom: 100px;   
 }
 
 .box-op{
@@ -409,20 +394,8 @@ main .content .operazioni{
     width: calc(100% / 3);
 }
 
-.right{
-    float: right;
-}
-
-.left{
-    float: left;
-}
-
 .img-cont{
     text-align: center;
-}
-
-#tools{
-    width: 100%;
 }
 
 .box-op h2{
@@ -440,8 +413,6 @@ main .content .operazioni{
 /*Inizio sponsor*/
 /*Inizio titolo sponsor*/
 .sponsor-title{
-    width: 75%;
-    margin: auto;
     margin-bottom: 50px;
 }
 
@@ -459,7 +430,6 @@ main .content .operazioni{
 /*Inizio immagini e paragrafo sponsor*/
 .sponsor-img{
     width: 100vw;
-    
 }
 
 .sponsor-par{
@@ -468,8 +438,7 @@ main .content .operazioni{
     display: inline;
     position: relative;
     height: 30vw;
-    width: 40%;
-    overflow: scroll;
+    width: 40vw;
 }
 
 .img-par{
@@ -491,7 +460,6 @@ main .content .operazioni{
     display: inline;
     height: 50%;
     width: 50%;
-    float: left;
 }
 
 #img-1{
@@ -544,7 +512,6 @@ main .content .operazioni{
 
 .logo-container{
     position: relative;
-    width: 100%;
     height: 100%;
 }
 .prova{
@@ -556,7 +523,6 @@ main .content .operazioni{
 
 /*Inizio footer sponsor*/
 .azienda, .azienda-btn{
-    z-index: -1;
     position: relative;
     width: 50%;
     height: 300px;
@@ -574,7 +540,6 @@ main .content .operazioni{
     display: inline-block;
     position: absolute;
     color: black;
-    background-color: rgb(245, 245, 245);
     top: 45%;
     left:40%;
     text-decoration: none;
@@ -624,11 +589,6 @@ main .content .operazioni{
     background-color: black;
 }
 
-.tabella-footer{
-    width: 90%;
-    margin: auto;
-}
-
 .column{
     width: calc(100% / 5);
 }
@@ -653,10 +613,9 @@ main .content .operazioni{
 }
 
 .footer-bottom{
-    width: 90%;
-    margin: auto;
     padding-bottom: 50px;
 }
+
 #linea-footer{
     margin-top: 50px;
     margin-bottom: 50px;
