@@ -301,6 +301,7 @@ main .content .piano .right{
 
 /*Inizio enterprise*/
 .enterprise{
+    z-index: -1;
     border: solid lightgray 1px;
     width: 75%;
     margin: auto;
@@ -340,6 +341,7 @@ main .content .piano .right{
 }
 
 .enterprise p{
+
     margin-left: 30px;
     margin-bottom: 30px;
 }
@@ -436,6 +438,7 @@ main .content .operazioni{
 /*Fine operazioni*/
 
 /*Inizio sponsor*/
+/*Inizio titolo sponsor*/
 .sponsor-title{
     width: 75%;
     margin: auto;
@@ -451,18 +454,33 @@ main .content .operazioni{
 .sponsor-title a{
     color: rgb(0, 97, 255);
 }
+/*Fine titolo sponsor*/
 
+/*Inizio immagini e paragrafo sponsor*/
 .sponsor-img{
     width: 100vw;
     
 }
 
 .sponsor-par{
+    z-index: -1;
+    background-color: rgb(245, 245, 245) ;
     display: inline;
+    position: relative;
     height: 30vw;
-    width: calc(100% - 60vw);
+    width: 40%;
+    overflow: scroll;
 }
 
+.img-par{
+    width: 20%;
+    margin: 60px;
+}
+
+#linea-sponsor{
+    margin-top: 0px;
+    margin-left: 60px;
+}
 .sponsor-left, .sponsor-right{
     display: inline;
     height: 30vw;
@@ -478,6 +496,7 @@ main .content .operazioni{
 
 #img-1{
     background-color: rgb(197, 221, 195);
+    border: solid rgb(208, 233, 205) 10px;
 }
 
 #img-2{
@@ -513,6 +532,16 @@ main .content .operazioni{
     transform: translate(-50%, -50%);
 }
 
+.sponsor-par p, .sponsor-par span{
+    padding:0 60px;
+    line-height: 1.4;
+}
+
+.sponsor-par span{
+    display: inline-block;
+    margin-top: 50px;
+}
+
 .logo-container{
     position: relative;
     width: 100%;
@@ -523,14 +552,38 @@ main .content .operazioni{
     height: 300px;
     background-color: blue;
 }
+/*Fine immagini e paragrafo sponsor*/
 
+/*Inizio footer sponsor*/
 .azienda, .azienda-btn{
+    z-index: -1;
+    position: relative;
     width: 50%;
     height: 300px;
-    border: solid black 1px;
+    background-color: rgb(180, 208, 231);
 }
 
+.azienda h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+#azienda-btn{
+    display: inline-block;
+    position: absolute;
+    color: black;
+    background-color: rgb(245, 245, 245);
+    top: 45%;
+    left:40%;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    padding: 10px 50px;
+
+}
+/*Fine footer sponsor*/
+/*Fine sezione sponsor*/
 
 .faq{
     height: 500px;
@@ -541,21 +594,62 @@ main .content .operazioni{
 }
 /*Fine main*/
 
+/*Inizio footer*/
 .footer{
     width: 100vw;
-    height: 500px;
     background-color: black;
 }
 
 .tabella-footer{
-    height: 100%;
     width: 90%;
     margin: auto;
-    border: solid white 1px;
 }
 
 .column{
     width: calc(100% / 5);
-    height: 100%;
-    border: solid white 1px;
 }
+
+.footer .tabella-footer .column h4{
+    padding-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer .column ul li{
+    padding-left: 50px;
+    margin: 5px 0px;
+    list-style: none;
+}
+
+.footer .column ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.footer-bottom{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+#linea-footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    width: 100px;
+    border-bottom: solid gray 1px;
+}
+
+.lingua{
+    margin-left: 50px;
+    color: gray;
+}
+
+.italiano{
+    font-size: 12px;
+    margin-left: 10px;
+    color: gray;
+    font-weight: 100;
+}
+/*Fine footer*/
