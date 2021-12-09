@@ -481,7 +481,7 @@ main .content .piano .box{
 
 .sponsor-par{
     overflow-y: scroll;
-    z-index: -1;
+    
     background-color: rgb(245, 245, 245) ;
     display: inline;
     position: relative;
@@ -541,13 +541,13 @@ main .content .piano .box{
 
 .sponsor-logo{
     filter: invert();
-    /*position: absolute;*/
+    position: absolute;
     width: 50%;
-    /*top: 50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);*/
-    height: 100%;
-    vertical-align: middle;
+    transform: translate(-50%, -50%);
+    
+    
 }
 
 .sponsor-par p, .sponsor-par span{
@@ -561,8 +561,9 @@ main .content .piano .box{
 }
 
 .logo-container{
-   /* position: relative;*/
+    position: relative;
     height: 100%;
+    line-height: 100%;
     text-align: center;
 }
 .prova{
@@ -631,8 +632,36 @@ main .content .piano .box{
     width: 55%;
     text-align: right;
     display: inline-block;
+    position: relative;
 }
 
+#arrow-up{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+.faq-par{
+    margin-top: 30px;
+    color: gray;
+    font-size: 13px;
+    line-height: 1.6;
+    display: none;
+}
+
+.question:hover .faq-par{
+    display: block;
+}
+
+.question:hover #arrow-up{
+    display: block;
+}
+
+.question:hover #arrow-down{
+    display: none;
+}
 /*Fine faq*/
 /*Fine main*/
 
