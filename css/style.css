@@ -474,6 +474,103 @@ main .content .piano .box{
 }
 /*Fine titolo sponsor*/
 
+/*Inizio immagini e paragrafo sponsor*/
+.sponsor-img{
+    width: 100vw;
+}
+
+.sponsor-par{
+    overflow-y: scroll;
+    z-index: -1;
+    background-color: rgb(245, 245, 245) ;
+    display: inline;
+    position: relative;
+    height: 30vw;
+    width: 40vw;
+}
+
+.img-par{
+    width: 20%;
+    margin: 60px;
+}
+
+#linea-sponsor{
+    margin-top: 0px;
+    margin-left: 60px;
+}
+.sponsor-left, .sponsor-right{
+    display: inline;
+    height: 30vw;
+    width: 30vw;
+}
+
+#img-1, #img-2, #img-3, #img-4, #img-5, #img-6, #img-7, #img-8{
+    display: inline;
+    height: 50%;
+    width: 50%;
+}
+
+#img-1{
+    background-color: rgb(197, 221, 195);
+    border: solid rgb(208, 233, 205) 10px;
+}
+
+#img-2{
+    background-color: rgb(70, 7, 31);
+}
+
+#img-3{
+    background-color: rgb(1, 147, 206);
+}
+
+#img-4, #img-5{
+    background-color: rgb(255, 28, 28);
+}
+
+#img-6{
+    background-color: rgb(180, 207, 231);
+}
+
+#img-7{
+    background-color: rgb(14, 36, 129);
+}
+
+#img-8{
+    background-color: rgb(255, 216, 47);
+}
+
+.sponsor-logo{
+    filter: invert();
+    /*position: absolute;*/
+    width: 50%;
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    height: 100%;
+    vertical-align: middle;
+}
+
+.sponsor-par p, .sponsor-par span{
+    padding:0 60px;
+    line-height: 1.4;
+}
+
+.sponsor-par span{
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.logo-container{
+   /* position: relative;*/
+    height: 100%;
+    text-align: center;
+}
+.prova{
+    width: 100vw;
+    height: 300px;
+    background-color: blue;
+}
+/*Fine immagini e paragrafo sponsor*/
 
 /*Inizio footer sponsor*/
 .azienda, .azienda-btn{
