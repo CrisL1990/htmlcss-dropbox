@@ -300,10 +300,6 @@ main .content .piano .box{
     margin-bottom: 40px;
 }
 
-#ul-placeholder{
-    
-}
-
 .fas.fa-check{
     color: rgb(0, 92, 242);
     margin-right: 10px;
@@ -364,13 +360,14 @@ main .content .piano .box{
 }
 
 .partner .piano-par h3{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 30px;
 }
 
 .partner .piano-par p{
-    font-size: 13px;
-    line-height: 2.2;
+    padding-right: 100px;
+    font-size: 15px;
+    line-height: 2;
     margin-bottom: 30px;
 }
 
@@ -384,6 +381,10 @@ main .content .piano .box{
 
 .piano-par.right{
     width: 45%;
+}
+
+.hover-gray:hover{
+    background-color: rgba(220, 220, 220, 0.5);
 }
 /*Fine partner*/
 /*Fine piani*/
