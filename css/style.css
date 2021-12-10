@@ -39,7 +39,7 @@
     padding: 8px 50px;
 }
 
-#text-white, #prova-gratuita, #ufficio-btn, #try{
+#text-white, #prova-gratuita, #ufficio-btn, #try1, #try2, #try3, #try4{
     color: white;
     text-decoration: none;
 }
@@ -262,6 +262,7 @@ main{
 
 /*Inizio colonne piani*/
 main .content .piano .box{
+    padding-bottom: 100px;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 30%;
@@ -297,7 +298,7 @@ main .content .piano .box{
     margin-top: 30px;
 }
 
-#user{
+#user1, #user2, #user3{
     margin-top: 50px;
 }
 
@@ -390,7 +391,7 @@ main .content .piano .box{
 
 /*Inizio partner*/
 .partner .piano-par{
-    padding-left: 50px;
+    padding-left: 150px;
     padding-right: 0px;
     padding-top: 50px;
 }
@@ -401,7 +402,7 @@ main .content .piano .box{
 }
 
 .partner .piano-par p{
-    padding-right: 100px;
+    padding-right: 0px;
     font-size: 15px;
     line-height: 2;
     margin-bottom: 30px;
@@ -628,14 +629,14 @@ main .content .piano .box{
     display: inline-block;
 }
 
-.faq .question .arrow-down{
+.faq .question .arrow{
     width: 55%;
     text-align: right;
     display: inline-block;
     position: relative;
 }
 
-#arrow-up{
+#arrow-up1, #arrow-up2, #arrow-up3, #arrow-up4{
     top: 0;
     left: 0;
     position: absolute;
@@ -651,11 +652,14 @@ main .content .piano .box{
     display: none;
 }
 
-.question:hover .faq-par, .question:hover #arrow-up {
+.question:hover .faq-par, .question:hover #arrow-up1,
+.question:hover #arrow-up,.question:hover #arrow-up3, 
+.question:hover #arrow-up4{
     display: block;
 }
 
-.question:hover #arrow-down{
+.question:hover #arrow-down1, .question:hover #arrow-down2,
+.question:hover #arrow-down3, .question:hover #arrow-down4{
     display: none;
 }
 /*Fine faq*/
